@@ -6,6 +6,7 @@ export const CLEAR_DISPLAY = 'CLEAR_DISPLAY';
 
 export const MEMORY_ADD = 'MEMORY_ADD';
 export const MEMORY_RECALL = 'MEMORY_RECALL';
+export const MEMORY_CLEAR = 'MEMORY_CLEAR';
 
 
 export const addOne = () => {
@@ -27,4 +28,7 @@ export const addMemory = () => {
 }
 export const recallMemory = () => {
     return({type:MEMORY_RECALL})
+}
+export const clearMemory = () => {
+    return({type:MEMORY_CLEAR})
 }
